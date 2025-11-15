@@ -10,7 +10,7 @@ Modern, context-driven Todo manager built with React + Vite and styled with Tail
 ### Live Demo 🤸‍♂️:
 
 ```bash
-https://context-todo-app.netlify.app
+https://contextapi-app.netlify.app
 ```
 
 ## ✨ Features at a Glance
