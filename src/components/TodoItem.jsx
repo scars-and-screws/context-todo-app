@@ -62,7 +62,7 @@ function TodoItem ({ todo }) {
       {!isTodoEditable && (
         <input
           type='checkbox'
-          className='cursor-pointer'
+          className='cursor-pointer hover:scale-105 duration-150 size-4 accent-green-600'
           checked={todo.completed}
           onChange={toggleCompleted}
         />
@@ -78,7 +78,7 @@ function TodoItem ({ todo }) {
       />
       {/* Edit, Save Button */}
       <button
-        className='inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50'
+        className='inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50 hover:cursor-pointer hover:scale-105 duration-150  '
         onClick={() => {
           if (todo.completed) return
 
@@ -93,7 +93,7 @@ function TodoItem ({ todo }) {
       {/* Delete Todo Button */}
       {!isTodoEditable && (
         <button
-          className='inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0'
+          className='inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 hover:cursor-pointer hover:scale-105 duration-150'
           onClick={() => deleteTodo(todo.id)}
         >
           ❌

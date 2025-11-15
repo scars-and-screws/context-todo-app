@@ -25,7 +25,7 @@ function TodoForm () {
       />
       <button
         type='submit'
-        className='rounded-r-lg px-3 py-1 bg-green-600 text-white shrink-0'
+        className='rounded-r-lg px-3 py-1 bg-green-700 text-white shrink-0 hover:bg-green-800 duration-150 hover:cursor-pointer  '
       >
         Add
       </button>
