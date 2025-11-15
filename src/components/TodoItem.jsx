@@ -62,7 +62,7 @@ function TodoItem ({ todo }) {
       {!isTodoEditable && (
         <input
           type='checkbox'
-          className='cursor-pointer hover:scale-105 duration-150 size-4 accent-green-600'
+          className='cursor-pointer hover:scale-105 duration-150 size-4 accent-green-600 '
           checked={todo.completed}
           onChange={toggleCompleted}
         />
@@ -70,7 +70,7 @@ function TodoItem ({ todo }) {
       <input
         type='text'
         ref={inputRef}
-        className={inputClasses}
+        className={`${inputClasses} font-medium`}
         value={todoMsg}
         onChange={e => setTodoMsg(e.target.value)}
         onKeyDown={handleKeyDown}
